@@ -14,13 +14,12 @@ buttonAccedi.addEventListener('click',
         //ciclo per la validazione dell'email
         for(let i = 0; i < emailArray.length; i++) {
             if (emailArray[i] == userEmail){
-                
                 control = true
             }  
         }
         
         //output successiva alla validazione
-        if(control == true){
+        if(control){
             const htmlConsentito = document.getElementById('accesso-consentito');
             htmlConsentito.classList.remove('ms_none');
         } else{
