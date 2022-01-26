@@ -17,13 +17,13 @@ buttonPlay.addEventListener('click',
         //ciclo per trovare l'esito della partita
         if (dadoUtente > dadoComputer) {
         //vittoria utente
-        esitoPartita = "Complimenti hai vinto !!!"
+        esitoPartita = "Complimenti hai vinto !!!";
         } else if (dadoUtente < dadoComputer){
          //vittoria computer
-        esitoPartita = "Mi dispiace il computer ha vinto"
+        esitoPartita = "Mi dispiace il computer ha vinto";
         }else{
         //pareggio
-        esitoPartita = "Avete pareggiato"
+        esitoPartita = "Avete pareggiato";
         }
 
     //stampa del numero dell'utente
