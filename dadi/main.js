@@ -26,7 +26,7 @@ buttonPlay.addEventListener('click',
         }else{
         //pareggio
         esitoPartita = "Avete pareggiato"
-    }
+        }
 
     //stampa del numero dell'utente
     document.getElementById('user-number').innerHTML = dadoUtente;
@@ -40,8 +40,6 @@ buttonPlay.addEventListener('click',
     //aggiunta della classe active per mostrare il risultato
     const htmlEsitoPartita = document.getElementById('box-esito');
     htmlEsitoPartita.classList.remove('ms_none');
-
-
 
 }    
     
