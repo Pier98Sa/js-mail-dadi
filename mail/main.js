@@ -14,7 +14,8 @@ buttonAccedi.addEventListener('click',
         //ciclo per la validazione dell'email
         for(let i = 0; i < emailArray.length; i++) {
             if (emailArray[i] == userEmail){
-                control = true
+                control = true;
+                break;
             }  
         }
         
