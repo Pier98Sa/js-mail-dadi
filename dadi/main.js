@@ -38,7 +38,6 @@ buttonPlay.addEventListener('click',
     //aggiunta della classe active per mostrare il risultato
     const htmlEsitoPartita = document.getElementById('box-esito');
     htmlEsitoPartita.classList.remove('ms_none');
-
 }    
     
 );
