@@ -7,11 +7,9 @@ buttonPlay.addEventListener('click',
     function() {
         //numero dell'utente
         let dadoUtente = Math.floor(Math.random() * 6) + 1;
-        console.log(dadoUtente);
-
+    
         //numero del computer
         let dadoComputer = Math.floor(Math.random() * 6) + 1;
-        console.log(dadoComputer);
         
         //variabile dell'esito della partita inizializzata
         let esitoPartita;
