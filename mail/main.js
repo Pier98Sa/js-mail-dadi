@@ -4,9 +4,15 @@ const emailArray = ['laroccapierluigi1998@gmail.com', 'yakoiyeicafroi-2435@gmail
 //variabile button accedi
 let buttonAccedi = document.getElementById("button-addon2");
 
+// costanti per l'output della validazione
+const htmlConsentito = document.getElementById('accesso-consentito');
+const htmlNonConsentito = document.getElementById('accesso-negato');
 
 buttonAccedi.addEventListener('click',
     function(){
+        //aggiungo le classi nel caso in cui dovessi ritentare
+        htmlConsentito.classList.add('ms_none');
+        htmlNonConsentito.classList.add('ms_none');
         //acquisizione del dato inserito dall'utente
         let userEmail = document.getElementById("user-email").value;
         //inizializzazione della variabile per il controllo
@@ -21,10 +27,8 @@ buttonAccedi.addEventListener('click',
         
         //output successiva alla validazione
         if(control){
-            const htmlConsentito = document.getElementById('accesso-consentito');
             htmlConsentito.classList.remove('ms_none');
         } else{
-            const htmlNonConsentito = document.getElementById('accesso-negato');
             htmlNonConsentito.classList.remove('ms_none');
         }
 
